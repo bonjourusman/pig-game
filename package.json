@@ -1,0 +1,33 @@
+{
+  "name": "pig-game",
+  "description": "",
+  "version": "1.0.0",
+  "dependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonjourusman/pig-game.git"
+  },
+  "author": "Usman Mahmood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonjourusman/pig-game/issues"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "outDirPattern": "**/img",
+        "staticPath": "img"
+      }
+    ]
+  },
+  "homepage": "https://github.com/bonjourusman/pig-game#readme",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  }
+}

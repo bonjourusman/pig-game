@@ -54,11 +54,12 @@ btnRoll.addEventListener('click', function () {
   if (playing) {
     // 1. Generating a Random Dice Roll
     const dice = Math.trunc(Math.random() * 6) + 1;
-    //   console.log(dice);
+    // console.log(dice);
 
     // 2. Display Dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`; // dynamically load one of the 6 images in the project folder
+    diceEl.src = `./img/dice-${dice}.png`; // dynamically load one of the 6 images in the project folder
+    console.log(diceEl.src);
 
     // 3. Check for rolled 1: if TRUE, switch to next player
     if (dice !== 1) {
