@@ -16,18 +16,9 @@
   "bugs": {
     "url": "https://github.com/bonjourusman/pig-game/issues"
   },
-  "staticFiles": {
-    "staticPath": [
-      {
-        "outDirPattern": "**/img",
-        "staticPath": "img"
-      }
-    ]
-  },
   "homepage": "https://github.com/bonjourusman/pig-game#readme",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0",
-    "parcel-plugin-static-files-copy": "^2.6.0"
+    "parcel": "^2.0.0-rc.0"
   }
 }
