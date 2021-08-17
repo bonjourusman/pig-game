@@ -1,5 +1,7 @@
 # The PIG Game
 
+https://pig-game-usman.netlify.app/
+
 A fun 2 player risk-reward game. First player to bank 20 points wins!
 
 **Rules:**
