@@ -1,5 +1,12 @@
 'use strict';
 
+import d1 from 'url:/img/dice-1.png';
+import d2 from 'url:/img/dice-2.png';
+import d3 from 'url:/img/dice-3.png';
+import d4 from 'url:/img/dice-4.png';
+import d5 from 'url:/img/dice-5.png';
+import d6 from 'url:/img/dice-6.png';
+
 // Selecting Elements:
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
@@ -58,8 +65,19 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display Dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `./img/dice-${dice}.png`; // dynamically load one of the 6 images in the project folder
-    console.log(diceEl.src);
+    // diceEl.src = `/img/dice-${dice}.png`; // dynamically load one of the 6 images in the project folder
+    diceEl.src =
+      dice === 1
+        ? `${d1}`
+        : dice === 2
+        ? `${d2}`
+        : dice === 3
+        ? `${d3}`
+        : dice === 4
+        ? `${d4}`
+        : dice === 5
+        ? `${d5}`
+        : `${d6}`;
 
     // 3. Check for rolled 1: if TRUE, switch to next player
     if (dice !== 1) {
