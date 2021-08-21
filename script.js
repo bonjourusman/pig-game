@@ -8,7 +8,7 @@ import d5 from 'url:/img/dice-5.png';
 import d6 from 'url:/img/dice-6.png';
 
 // Target Score:
-const target = 50;
+const target = 100;
 
 // Selecting Elements:
 const player0El = document.querySelector('.player--0');
@@ -104,7 +104,7 @@ btnHold.addEventListener('click', function () {
     document.querySelector(`#score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    // 2. Check if score is at least 50
+    // 2. Check if score is at least the target score
     // if TRUE, finish the game
     if (scores[activePlayer] >= target) {
       // Finish the game
