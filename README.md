@@ -2,7 +2,7 @@
 
 https://pig-game-usman.netlify.app/
 
-A fun 2 player risk-reward game. First player to bank 50 points wins!
+A fun 2 player risk-reward game. First player to bank 100 points wins!
 
 **Rules:**
 
